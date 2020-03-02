@@ -1,0 +1,25 @@
+{
+  "name": "repair_dis",
+  "version": "1.0.0",
+  "description": "Lessons_GLA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Livter25/repair_dis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Livter25/repair_dis/issues"
+  },
+  "homepage": "https://github.com/Livter25/repair_dis#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
