@@ -7,8 +7,16 @@
     background: $dark url('../img/hero_bg.jpg') no-repeat center / cover
     height: 100vh
     color: $light
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba($dark, 0.7)
     &__content
         max-width: 667px
+        position: relative
+
     &__text
         font-size: 22px
         max-width: 500px
@@ -27,10 +35,22 @@
         align-items: center
         background-color: $dark
         &__link
+            display: flex
+            align-items: center
             text-transform: uppercase
             color: $primary
             text-decoration: none
             transform: rotate(90deg)
+            line-height: 0.8px
+            &::after
+                content: ''
+                margin-left: 8px
+                
+                width: 51px
+                height: 1px
+                background-color: $primary
+
+                
     &__skroll-down
         position: absolute
         display: flex
@@ -39,17 +59,27 @@
         text-transform: uppercase
         text-decoration: none
         color: $light
-
         left: 0
         bottom: 0
         min-width: 247px
         min-height: 97px
         background-color: $dark
+        &::after
+            content: ''
+            background: url('../img/Vector.svg') no-repeat center
+            margin-left: 12px
+            width: 30px
+            height: 30px
+            border: 2px solid $primary
+            border-radius: 50%
+
             
 .title
     font-family: 'Yeseva One', cursive
     text-transform: uppercase
     font-size: 40px
     margin: 0 
+    letter-spacing: 3px
+
     &--primary
         color: $primary      

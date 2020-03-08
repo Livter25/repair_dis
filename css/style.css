@@ -370,9 +370,24 @@ template {
   text-transform: uppercase;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .button--primary {
   background-color: #E3B873;
   color: #ffffff;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.button--primary:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button--outline {
@@ -413,6 +428,12 @@ template {
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 40px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.nav__item:hover {
+  color: #E3B873;
 }
 
 .phone {
@@ -443,8 +464,17 @@ template {
   color: #ffffff;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.7);
+}
+
 .hero__content {
   max-width: 667px;
+  position: relative;
 }
 
 .hero__text {
@@ -478,11 +508,26 @@ template {
 }
 
 .hero .instagram__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   color: #E3B873;
   text-decoration: none;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  line-height: 0.8px;
+}
+
+.hero .instagram__link::after {
+  content: '';
+  margin-left: 8px;
+  width: 51px;
+  height: 1px;
+  background-color: #E3B873;
 }
 
 .hero__skroll-down {
@@ -506,11 +551,22 @@ template {
   background-color: #131313;
 }
 
+.hero__skroll-down::after {
+  content: '';
+  background: url("../img/Vector.svg") no-repeat center;
+  margin-left: 12px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+}
+
 .title {
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 40px;
   margin: 0;
+  letter-spacing: 3px;
 }
 
 .title--primary {
