@@ -18,5 +18,49 @@
         border: 1px solid $light
         background-color: transparent
         color: $light
+
+.label
+    font-size: 1.07rem
+    &--light
+        color: rgba($light, 0.5)
+
+.input
+    font-size: 1.85rem
+    color: $light
+    font-family: 'Futura Book', sans-serif
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid rgba($light, 0.15)
+    padding: 0.5rem 0
+    &::placeholder
+        color: $light
+
+
+.policy
+    &__checkbox
+        opacity: 0
+        visibility: hidden
+        &:checked +
+            .policy__lable
+                    &::before
+                        background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+                        
+            
+    &__lable
+        display: flex
+        align-items: center
+        &::before
+            content: ''
+            width: 18px
+            height: 18px
+            border: 1px solid $primary
+            border-radius: 1px
+            cursor: pointer
+            margin-right: 0.64rem
+
+            
+
+    
+
         
     
