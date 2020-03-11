@@ -425,6 +425,10 @@ img {
   font-family: 'Yeseva One', cursive;
 }
 
+.section-title__team {
+  color: #ffffff;
+}
+
 .section-title__img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,6 +455,10 @@ img {
   text-align: center;
   font-family: 'Futura Book', sans-serif;
   margin: 23px 0 39px;
+}
+
+.section__text__team {
+  color: #ffffff;
 }
 
 .header {
@@ -636,6 +644,23 @@ img {
   margin-bottom: 2rem;
 }
 
+.types__card {
+  height: 100%;
+}
+
+.bcg {
+  margin-top: -500px;
+  margin-bottom: -500px;
+  height: 1000px;
+  width: 100%;
+  background-color: #131313;
+}
+
+.team {
+  height: 100%;
+  min-height: 800px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -648,9 +673,16 @@ img {
           justify-content: space-between;
 }
 
-.col {
-  -ms-flex-preferred-size: 32%;
-      flex-basis: 32%;
+.row__team {
+  margin-top: 5.28rem;
+}
+
+.card__sub {
+  position: absolute;
+  background-color: #E3B873;
+  padding: 13px 16px;
+  margin-top: -2.5rem;
+  margin-left: -2.5rem;
 }
 
 .card__text {
@@ -664,11 +696,28 @@ img {
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
+.card__text--team {
+  margin: -6.2rem 1.35rem;
+  padding: 1.57rem 1.5rem;
+}
+
+.card__sup {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  color: #959595;
+}
+
 .card__title {
   margin-top: 0;
   margin-bottom: 0.7rem;
   font-size: 1.29rem;
   font-family: 'Yeseva One', cursive;
+}
+
+.card__title--team {
+  text-align: center;
 }
 
 .card__list {
@@ -691,6 +740,18 @@ img {
   background-color: #E3B873;
   color: #ffffff;
   padding: 1.214rem 2.6rem;
+}
+
+.card__pricetag--team {
+  padding: 0.9rem 1.64rem;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 189px;
+  font-size: 0.9rem;
+  bottom: -3.2rem;
+  margin-top: 1.71rem;
 }
 
 @media screen and (max-width: 975px) {
@@ -789,5 +850,38 @@ img {
   .hero__skroll-down {
     display: none;
   }
+  .bcg {
+    margin-top: -2050px;
+    margin-bottom: -5000px;
+    height: 10000px;
+  }
+  .card__img {
+    margin-top: 150px;
+  }
+  .card__img--1 {
+    margin-top: 0;
+  }
+  .card__sub {
+    margin-top: 9.5rem;
+  }
+  .card__sub_wtf {
+    margin-top: -2.5rem;
+  }
+  .card__text {
+    margin: -6.2rem 1.35rem;
+    padding: 1.57rem 1.5rem;
+  }
+  .card__pricetag--team {
+    max-width: 200px;
+  }
+}
+
+.section-title__heading {
+  color: #ffffff;
+}
+
+.section__text {
+  color: #ffffff;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
