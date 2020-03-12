@@ -477,7 +477,7 @@ img {
   max-width: 100%;
 }
 
-.col__disg {
+.col {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
   max-width: 392px;
@@ -663,6 +663,23 @@ img {
   width: 51px;
   height: 1px;
   background-color: #E3B873;
+}
+
+.hero .skroll-up {
+  position: fixed;
+  z-index: 99;
+}
+
+.hero .skroll-up::after {
+  content: '';
+  background: url("../img/Vector.svg") no-repeat center;
+  margin-left: 12px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .hero__skroll-down {
@@ -960,6 +977,15 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .bcg {
+    height: 100%;
+  }
+  .section-title__heading {
+    color: #ffffff;
+  }
+  .section__text {
+    color: #ffffff;
+  }
   .types__card {
     margin-bottom: 4.29rem;
   }
@@ -976,6 +1002,9 @@ img {
   }
   .contacts__button {
     display: none;
+  }
+  .bcg {
+    height: 100%;
   }
   .title {
     font-size: 1.64rem;
@@ -1000,6 +1029,12 @@ img {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem;
+  }
+  .section-title__heading {
+    color: #ffffff;
+  }
+  .section__text {
+    color: #ffffff;
   }
 }
 

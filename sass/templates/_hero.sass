@@ -55,6 +55,19 @@
                 height: 1px
                 background-color: $primary
 
+    .skroll-up
+        position: fixed
+        z-index: 99
+        &::after
+            content: ''
+            background: url('../img/Vector.svg') no-repeat center
+            margin-left: 12px
+            width: 30px
+            height: 30px
+            border: 2px solid $primary
+            border-radius: 50%
+            transform: rotate(180deg)
+
                 
     &__skroll-down
         position: absolute
