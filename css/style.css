@@ -715,7 +715,7 @@ img {
   margin-bottom: -500px;
   height: 1000px;
   width: 100%;
-  background-color: #131313;
+  background: #131313 url("../img/back_line.svg") no-repeat center;
 }
 
 .team {
