@@ -13,6 +13,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     closbtn.addEventListener('click', switchModal);
+
+    document.addEventListener('keydown', (event) =>{
+        console.log(event);
+    });
+
+
+
+
+    document.addEventListener('keydown', (event) =>{
+        console.log(event);
+    });
+
+
     
-    
-  });
+});
