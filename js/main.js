@@ -12,6 +12,8 @@ $(document).ready(function () {
         
     } )
 
+    $('.skroll-up').fadeOut();
+
 
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
