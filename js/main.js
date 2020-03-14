@@ -20,8 +20,27 @@ $(document).ready(function () {
         return false;
         
     });
-   
+    
 
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        loop: true,
+        
+        pagination: {
+            el: '.swiper-slide__number',
+            type: 'fraction',
+            
+          },
+        
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            
+          },
+          
+          
+
+      });
 
     var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters
@@ -29,15 +48,25 @@ $(document).ready(function () {
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
+            
+            clickable: true,
+            // renderBullet: function (index, className) {
+            //     return '<span class="bullet">' + (index + 1) + '</span>';
           },
+        
+        
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
             
           },
           
+          
 
       });
+
+     
+
 
       var next = $('.swiper-button-next__project');
       var prev = $('.swiper-button-prev__project');
