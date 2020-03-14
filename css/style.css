@@ -363,6 +363,46 @@ template {
   margin: auto;
 }
 
+.col-chos {
+  margin-top: 8%;
+  width: 60%;
+}
+
+.col-chos__text {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1.07rem;
+  line-height: 1.28rem;
+  width: 60%;
+}
+
+.col-chos__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.07rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #E3B873;
+}
+
+.col-chos__ssl {
+  width: 30%;
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 36px;
+}
+
+.col-chos__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col-steps {
+  width: 30%;
+}
+
 .col__disg {
   -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
@@ -551,6 +591,23 @@ img {
   height: 2px;
   background-color: #E3B873;
   margin-left: 2rem;
+}
+
+.section-title__steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-title__steps::after {
+  content: '';
+  width: 90px;
+  height: 2px;
+  background-color: #E3B873;
+  margin-left: 6rem;
 }
 
 .section-title--left {
@@ -1045,6 +1102,30 @@ img {
       flex-wrap: wrap;
 }
 
+.swiper-slide__info {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1.07rem;
+  line-height: 1.78rem;
+  color: #ffffff;
+  margin-bottom: 67px;
+}
+
+.swiper-slide__title {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.07rem;
+  line-height: 1.64rem;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.swiper-slide__number {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.28rem;
+  line-height: 1.78rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .swiper-slide__text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -1068,6 +1149,10 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: -2px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 13px;
 }
 
 @media screen and (max-width: 1256px) {
@@ -1122,6 +1207,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .steps {
+    display: none;
+  }
   .skroll-up {
     display: none;
   }

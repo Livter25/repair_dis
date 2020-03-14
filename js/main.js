@@ -20,6 +20,7 @@ $(document).ready(function () {
         return false;
         
     });
+   
 
 
     var mySwiper = new Swiper ('.swiper-container', {
@@ -32,16 +33,28 @@ $(document).ready(function () {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+            
           },
+          
 
       });
 
-      var next = $('.swiper-button-next');
-      var prev = $('.swiper-button-prev');
-      var bullets = $('.swiper-pagination');
+      var next = $('.swiper-button-next__project');
+      var prev = $('.swiper-button-prev__project');
+      var bullets = $('.swiper-pagination__project');
 
       next.css('left', prev.width() + 10 + bullets.width() + 10)
       bullets.css('left', prev.width() + 10 )
+
+      var nexts = $('.swiper-button-next__steps');
+      var prevs = $('.swiper-button-prev__steps');
+      var bulletss = $('.swiper-pagination__steps');
+
+      nexts.css('left', prevs.width() + 10 + bulletss.width() + 10)
+      bulletss.css('left', prevs.width() + 10 )
+      
+
+      
     
 });
 
