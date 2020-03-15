@@ -41,6 +41,8 @@ $(document).ready(function () {
           
 
       });
+    
+    
 
     var mySwiper = new Swiper ('.swiper-container', {
         // Optional parameters
@@ -63,25 +65,23 @@ $(document).ready(function () {
           
           
 
-      });
+    });
 
      
 
 
-      var next = $('.swiper-button-next__project');
-      var prev = $('.swiper-button-prev__project');
-      var bullets = $('.swiper-pagination__project');
+      var next = $('.swiper-button-next');
+      var prev = $('.swiper-button-prev');
+      var bullets = $('.swiper-pagination');
+
+
+    
 
       next.css('left', prev.width() + 10 + bullets.width() + 10)
       bullets.css('left', prev.width() + 10 )
 
-      var nexts = $('.swiper-button-next__steps');
-      var prevs = $('.swiper-button-prev__steps');
-      var bulletss = $('.swiper-pagination__steps');
 
-      nexts.css('left', prevs.width() + 10 + bulletss.width() + 10)
-      bulletss.css('left', prevs.width() + 10 )
-      
+   
 
       
     

@@ -719,7 +719,6 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 100pxgit;
-  background: #131313 url("../img/hero_bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff;
 }
@@ -1267,7 +1266,11 @@ img {
     width: 100%;
   }
   .col-50--order {
+    padding: 0 5%;
     display: block;
+  }
+  .col-50--none {
+    display: none;
   }
   .swiper-wrapper {
     margin-bottom: 33px;
