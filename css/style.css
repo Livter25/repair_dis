@@ -1267,11 +1267,9 @@ img {
     width: 100%;
   }
   .col-50--order {
+    margin-top: 25px;
     padding: 0 5%;
     display: block;
-  }
-  .col-50--none {
-    display: none;
   }
   .swiper-wrapper {
     margin-bottom: 33px;
@@ -1299,7 +1297,7 @@ img {
     max-width: 200px;
   }
   .section-title__text {
-    text-align: center;
+    text-align: left;
     max-width: 100%;
   }
   .section-title__word {
@@ -1309,7 +1307,7 @@ img {
     display: none;
   }
   .section-title--primary {
-    text-align: center;
+    text-align: left;
     color: #E3B873;
   }
   .section__text {
