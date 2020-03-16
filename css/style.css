@@ -1142,6 +1142,10 @@ img {
   margin-bottom: 0.64rem;
 }
 
+.col-50--none {
+  margin-top: 15px;
+}
+
 .col-50--order {
   display: none;
 }
