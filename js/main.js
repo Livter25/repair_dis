@@ -22,7 +22,7 @@ $(document).ready(function () {
     });
     
 
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mywiper = new Swiper ('.swiper-container_21', {
         // Optional parameters
         loop: true,
         
@@ -33,8 +33,8 @@ $(document).ready(function () {
           },
         
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next_21',
+            prevEl: '.swiper-button-prev_21',
             
           },
           
@@ -44,28 +44,47 @@ $(document).ready(function () {
     
     
 
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper ('.swiper-container_21', {
         // Optional parameters
         loop: true,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.swiper-pagination_21',
             type: 'bullets',
             
-            clickable: true,
-            // renderBullet: function (index, className) {
-            //     return '<span class="bullet">' + (index + 1) + '</span>';
+            
           },
         
         
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next_21',
+            prevEl: '.swiper-button-prev_21',
             
           },
           
           
 
     });
+    var mySwiper = new Swiper ('.swiper-container_22', {
+      // Optional parameters
+      loop: true,
+      pagination: {
+          el: '.swiper-pagination_22',
+          type: 'bullets',
+          
+          
+        },
+      
+      
+      navigation: {
+          nextEl: '.swiper-button-next_22',
+          prevEl: '.swiper-button-prev_22',
+          
+        },
+        
+        
+
+  });
+    
 
      
 
@@ -78,7 +97,20 @@ $(document).ready(function () {
     
 
       next.css('left', prev.width() + 10 + bullets.width() + 10)
-      bullets.css('left', prev.width() + 10 )
+      bullets.css('left', prev.width() + 10 );
+
+      var nexts = $('.swiper-button-next_21');
+      var prevs = $('.swiper-button-prev_21');
+      var bulletss = $('.swiper-pagination_21');
+
+
+    
+
+      nexts.css('left', prevs.width() + 10 + bulletss.width() + 10)
+      bulletss.css('left', prevs.width() + 10 )
+
+
+      
 
 
    
