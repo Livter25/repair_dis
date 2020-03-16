@@ -1208,6 +1208,15 @@ img {
   .card__text {
     margin-left: 0;
   }
+  .col-50 {
+    margin-top: 35px;
+    width: 100%;
+  }
+  .col-50--order {
+    margin-top: 25px;
+    padding: 0 5%;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1252,11 +1261,34 @@ img {
     min-width: 22.86rem;
     margin-bottom: 1.85rem;
   }
+  .section-title__text {
+    text-align: left;
+    max-width: 100%;
+  }
+  .section-title__word {
+    display: inline;
+  }
+  .section-title__word::after {
+    display: none;
+  }
+  .section-title--primary {
+    text-align: left;
+    color: #E3B873;
+  }
   .section-title__heading {
     color: #ffffff;
   }
   .section__text {
     color: #ffffff;
+  }
+  .col-50 {
+    margin-top: 35px;
+    width: 100%;
+  }
+  .col-50--order {
+    margin-top: 25px;
+    padding: 0 5%;
+    display: block;
   }
 }
 
@@ -1268,7 +1300,7 @@ img {
     height: 100%;
   }
   .col-50 {
-    margin-top: 15px;
+    margin-top: 35px;
     width: 100%;
   }
   .col-50--order {
