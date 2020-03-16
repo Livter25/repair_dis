@@ -719,6 +719,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 100pxgit;
+  background: #131313 url("../img/hero_bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff;
 }
