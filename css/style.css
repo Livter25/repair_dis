@@ -472,6 +472,10 @@ template {
   font-size: 1.07rem;
 }
 
+.label--video {
+  color: rgba(54, 54, 54, 0.5);
+}
+
 .label--light {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -562,6 +566,10 @@ img {
   text-transform: uppercase;
   font-family: 'Yeseva One', cursive;
   line-height: 138.6%;
+}
+
+.section-title__control {
+  color: #ffffff;
 }
 
 .section-title__text {
@@ -863,6 +871,101 @@ img {
   color: #E3B873;
 }
 
+.control {
+  margin-top: -30rem;
+}
+
+.control__policy {
+  margin: auto;
+  margin-top: 41px;
+}
+
+.control__policy--size {
+  font-size: 1.25rem;
+}
+
+.control__button {
+  width: 200px;
+  height: 51px;
+}
+
+.control__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.control__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.control__form--input {
+  font-size: 1.28rem;
+  color: #131313;
+  font-family: 'Futura Book', sans-serif;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(19, 19, 19, 0.15);
+  padding: 0.5rem 0;
+}
+
+.control__text__video {
+  text-align: center;
+  font-size: 1.42rem;
+  line-height: 2.42rem;
+  font-family: 'Futura Book', sans-serif;
+  max-width: 40.785rem;
+  margin: auto;
+  margin-bottom: 61px;
+}
+
+.control__text__video::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 55px;
+  background: #E3B873;
+  margin: auto;
+  margin-bottom: 2.42rem;
+}
+
+.control__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: #131313 url("../img/bcg_video.jpg") no-repeat center/cover;
+  -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  margin-bottom: 4.428rem;
+}
+
+.video__play {
+  position: relative;
+  margin: auto;
+}
+
+.section-title__img {
+  margin-bottom: 40px;
+}
+
 .types__section-title {
   margin-bottom: 2rem;
 }
@@ -1068,6 +1171,10 @@ img {
       align-self: flex-end;
 }
 
+.project {
+  padding-bottom: 30rem;
+}
+
 .swiper-button-next, .swiper-button-prev {
   bottom: 0;
   top: auto;
@@ -1181,6 +1288,9 @@ img {
 }
 
 @media screen and (max-width: 975px) {
+  .control {
+    display: none;
+  }
   .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1195,9 +1305,6 @@ img {
   }
   .section-title--primary {
     color: #E3B873;
-  }
-  .section-title__heading {
-    color: #ffffff;
   }
   .section__text {
     color: #ffffff;
@@ -1274,9 +1381,6 @@ img {
   .section-title--primary {
     text-align: left;
     color: #E3B873;
-  }
-  .section-title__heading {
-    color: #ffffff;
   }
   .section__text {
     color: #ffffff;

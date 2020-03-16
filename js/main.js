@@ -1,4 +1,30 @@
 $(document).ready(function () {
+  new WOW().init();
+    //  var bob = $('.col-chos__ssl1'),
+    //     cols = $('[data-toggle=col]')
+
+    // cols.on('click', function () {
+    //     $(bob).toggleClass('swiper-pagination-bullets');
+    //     $(bob).toggleClass('swiper-pagination-bullet-active');
+           
+
+      
+    //   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     var modal = $('.modal'),
         modalbtn = $('[data-toggle=modal]'),
         closebtn = $('.modal__close')
@@ -11,7 +37,9 @@ $(document).ready(function () {
     closebtn.on('click', function() {
         $(modal).toggleClass('modal--visible');
         
-    } )
+    } );
+
+    
 
 
           
@@ -50,7 +78,7 @@ $(document).ready(function () {
         pagination: {
             el: '.swiper-pagination_21',
             type: 'bullets',
-            
+            clickable: true,
             
           },
         
@@ -108,6 +136,9 @@ $(document).ready(function () {
 
       nexts.css('left', prevs.width() + 10 + bulletss.width() + 10)
       bulletss.css('left', prevs.width() + 10 )
+
+
+  
 
 
       
