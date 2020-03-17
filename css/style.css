@@ -1462,6 +1462,10 @@ img {
   .control {
     margin-top: -95rem;
   }
+  .control__video {
+    min-height: 207px;
+    width: 340px;
+  }
   .control__button {
     width: 100%;
     -webkit-box-ordinal-group: 2;
