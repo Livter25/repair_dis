@@ -1,4 +1,20 @@
 .types
+    &__text
+        font-family: 'Futura Book', sans-serif
+        font-size: 1.42rem
+        line-height: 2.42rem
+        text-align: center
+        margin: auto
+        max-width:  568px
+        &::before
+            content: ''
+            display: block
+            height: 2px
+            width: 55px
+            background: $primary
+            margin: auto
+            margin-bottom: 2.42rem
+
     &__section-title
         margin-bottom: 2rem
     &__card
@@ -16,6 +32,7 @@
 .team
     height: 100%
     min-height: 800px 
+    margin-top: -40rem
     
 .card
     &__sub
@@ -80,6 +97,14 @@
             font-size: 0.9rem
             bottom: -3.2rem
             margin-top: 1.71rem
+.steps
+    padding-bottom: 40rem
+
+
+
+
+
+
 
 @media screen and (max-width:975px)
     .row
@@ -88,9 +113,7 @@
     .types
         &__card
             margin-bottom: 4.29rem
-    .card
-        &__text
-            margin-left: 0
+    
 
 
 @media screen and (max-height:576px)

@@ -19,6 +19,13 @@
             margin-left: 0
 
 @media screen and (max-width:975px)
+    
+    .policy
+        &__lable
+            font-size: 1.5rem
+
+    .client
+        display: none
     .steps
         display: none
     .project
@@ -35,6 +42,7 @@
             flex-direction: column
             &--input
                 border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+                font-size: 2rem
                 
         &__button
             width: 100%
@@ -43,7 +51,7 @@
     .label
         &--video
             margin-top: 63px
-            color: $light 
+            color: rgba(255, 255, 255, 0.5) 
     .control
         color: $light
         
@@ -66,8 +74,13 @@
         &__card
             margin-bottom: 4.29rem
     .card
+        &__pricetag
+            &--team
+                max-width: 83.7%
         &__text
-            margin-left: 0
+            
+            &--team
+
     .col
         &-50
             margin-top: 35px
@@ -79,6 +92,46 @@
                 display: block
 
 @media screen and (max-width:768px)
+    .label
+        font-size: 1.5rem
+    .input
+        font-size: 2rem
+    .team
+        padding-top: 40rem
+    .footer
+        background: $dark
+        &__title
+            font-size: 2rem
+        &__input
+            
+        &-wrap
+            background-color: transparent
+        &__button
+            margin-top: 15px
+            width: 100%
+            margin: 0
+            font-size: 1.5rem
+        &__policy
+            margin: 0
+            margin-bottom: 45px
+        &__col
+            font-size: 25px
+            &--2
+                margin: 0
+            &--1
+                flex-wrap: wrap
+                margin: 0
+                
+            &--11
+                margin-bottom: 45px
+                width: 100%
+        &__form
+            padding: 0
+    .types
+        &__card
+            margin-bottom: 200px
+        &__text
+            display: none
     .project
         padding-bottom: 98rem
     .control
@@ -124,6 +177,7 @@
             margin-bottom: 1.85rem
 
     .section
+        background-color: $dark
         &-title
             &__text
                 text-align: left
@@ -152,6 +206,7 @@
                 padding: 0 5%
                 display: block
 @media screen and (max-width:576px)
+    
     .project
         padding-bottom: 98rem
     .control

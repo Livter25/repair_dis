@@ -1,15 +1,87 @@
 $(document).ready(function () {
   new WOW().init();
-    //  var bob = $('.col-chos__ssl1'),
-    //     cols = $('[data-toggle=col]')
+  // маски
+  $('[type=tel]').mask('+7(000)-000-00-00', {placeholder: "+7(___)-___-__-__"});
+  
+  //валидация формы 
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 6
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName:{
+        required: "Имя обязательно ",
+        minlength: jQuery.validator.format("Имя не короче {0} букв")
+      } ,
+      userPhone: "Телефон обязательно",
+      userEmail: {
+        required: "Обязателно укажите Email",
+        email: "Введите в формате sdfsd@asdasd.com"
+        }
+      }
 
-    // cols.on('click', function () {
-    //     $(bob).toggleClass('swiper-pagination-bullets');
-    //     $(bob).toggleClass('swiper-pagination-bullet-active');
-           
-
+  });
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 6
+      },
+      userPhone: "required",
+      // compound rule
       
-    //   })
+    },
+    messages: {
+      userName:{
+        required: "Имя обязательно ",
+        minlength: jQuery.validator.format("Имя не короче {0} букв")
+      } ,
+      userPhone: "Телефон обязательно",
+      
+      }
+
+  });
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 6
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName:{
+        required: "Имя обязательно ",
+        minlength: jQuery.validator.format("Имя не короче {0} букв")
+      } ,
+      userPhone: "Телефон обязательно",
+      userEmail: {
+        required: "Обязателно укажите Email",
+        email: "Введите в формате sdfsd@asdasd.com"
+        }
+      }
+
+  });
 
 
 
