@@ -15,8 +15,33 @@
             margin-left: 0
 
 @media screen and (max-width:975px)
+    .project
+        padding-bottom: 98rem
     .control
-        display: none
+        margin-top: -93rem
+        &__text
+            &__video
+                margin-bottom: 0
+
+        &__policy
+            margin: 0
+        &__form
+            flex-direction: column
+            &--input
+                border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+                
+        &__button
+            width: 100%
+            order: 1
+            margin-top: 62px
+    .label
+        &--video
+            margin-top: 63px
+            color: $light 
+    .control
+        color: $light
+        
+    
     .row
         flex-direction: column
         align-items: center
@@ -48,6 +73,14 @@
                 display: block
 
 @media screen and (max-width:768px)
+    .project
+        padding-bottom: 98rem
+    .control
+        margin-top: -93rem
+        &__button
+            width: 100%
+            order: 1
+            margin-top: 62px
     .steps
         display: none
     .skroll-up
@@ -113,6 +146,14 @@
                 padding: 0 5%
                 display: block
 @media screen and (max-width:576px)
+    .project
+        padding-bottom: 98rem
+    .control
+        margin-top: -95rem
+        &__button
+            width: 100%
+            order: 1
+            margin-top: 62px
     .hero
         &__skroll-down
             display: none
