@@ -1284,6 +1284,9 @@ img {
 }
 
 @media screen and (max-width: 992px) {
+  .section-title__heading {
+    color: #ffffff;
+  }
   .nav {
     display: none;
   }
@@ -1296,6 +1299,9 @@ img {
 }
 
 @media screen and (max-width: 975px) {
+  .steps {
+    display: none;
+  }
   .project {
     padding-bottom: 98rem;
   }
