@@ -1,16 +1,19 @@
 $(document).ready(function () {
   new WOW().init();
   // маски
-  $('[type=tel]').mask('+7(000)-000-00-00', {placeholder: "+7(___)-___-__-__"});
+  $('[type=tel]').mask('+7(000)-000-00-00', {placeholder: "+7(000)-000-00-00"});
   
   //валидация формы 
   $('.modal__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
         required: true,
-        minlength: 6
+        minlength: 2,
+        maxlength: 15,
+        
       },
       userPhone: "required",
       // compound rule
@@ -22,7 +25,8 @@ $(document).ready(function () {
     messages: {
       userName:{
         required: "Имя обязательно ",
-        minlength: jQuery.validator.format("Имя не короче {0} букв")
+        minlength: jQuery.validator.format("Имя не короче {0} букв "),
+        maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
       } ,
       userPhone: "Телефон обязательно",
       userEmail: {
@@ -38,7 +42,8 @@ $(document).ready(function () {
       // simple rule, converted to {required:true}
       userName: {
         required: true,
-        minlength: 6
+        minlength: 2,
+        maxlength: 15,
       },
       userPhone: "required",
       // compound rule
@@ -47,7 +52,8 @@ $(document).ready(function () {
     messages: {
       userName:{
         required: "Имя обязательно ",
-        minlength: jQuery.validator.format("Имя не короче {0} букв")
+        minlength: jQuery.validator.format("Имя не короче {0} букв и не больше 15"),
+        maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
       } ,
       userPhone: "Телефон обязательно",
       
@@ -60,7 +66,8 @@ $(document).ready(function () {
       // simple rule, converted to {required:true}
       userName: {
         required: true,
-        minlength: 6
+        minlength: 2,
+        maxlength: 15,
       },
       userPhone: "required",
       // compound rule
@@ -72,7 +79,8 @@ $(document).ready(function () {
     messages: {
       userName:{
         required: "Имя обязательно ",
-        minlength: jQuery.validator.format("Имя не короче {0} букв")
+        minlength: jQuery.validator.format("Имя не короче {0} букв"),
+        maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
       } ,
       userPhone: "Телефон обязательно",
       userEmail: {
