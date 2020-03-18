@@ -1029,10 +1029,10 @@ img {
 }
 
 .request__button {
-  width: 213px;
+  width: 50%;
   height: 51px;
   margin-top: 2rem;
-  margin-left: 16.42rem;
+  margin-left: 50%;
 }
 
 .request__policy {
@@ -1047,8 +1047,6 @@ img {
 .request__for {
   margin-top: 130px;
   margin-bottom: 2.71rem;
-  margin-left: 54px;
-  width: 441px;
   background-color: #131313;
   -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
@@ -1072,7 +1070,6 @@ img {
 }
 
 .request__col {
-  width: 55%;
   position: relative;
 }
 
@@ -1087,19 +1084,23 @@ img {
 }
 
 .request__col--form {
-  width: 45%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
 .request__col--line {
   position: absolute;
   bottom: -9%;
-  left: -21%;
+  left: -145px;
   height: 100%;
   width: 100%;
   background: url("../img/request/line.svg") no-repeat center;
 }
 
 .request__col--bg {
+  -ms-flex-preferred-size: 64%;
+      flex-basis: 64%;
+  margin-right: 54px;
   background: url("../img/request/bg.jpg") no-repeat center;
 }
 
@@ -1132,7 +1133,7 @@ img {
 .request__col__number--1 {
   position: absolute;
   top: 25%;
-  left: 45%;
+  left: 46%;
 }
 
 .request__col__number--2 {
@@ -1667,9 +1668,29 @@ img {
   .nav__item {
     margin-right: 1rem;
   }
+  .request__col--line {
+    left: -114px;
+  }
+  .request__col__number--1 {
+    top: 22%;
+    left: 48%;
+  }
+  .request__col__number--2 {
+    top: 39%;
+    left: 65%;
+  }
+  .request__col__number--3 {
+    left: 68%;
+  }
+  .request__col__number--4 {
+    left: 56%;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .request__col--bg {
+    margin-right: 0;
+  }
   .section-title__heading {
     color: #ffffff;
   }
