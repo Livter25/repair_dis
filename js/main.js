@@ -36,6 +36,38 @@ $(document).ready(function () {
       }
 
   });
+  $('.request__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+        
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName:{
+        required: "Имя обязательно ",
+        minlength: jQuery.validator.format("Имя не короче {0} букв "),
+        maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
+      } ,
+      userPhone: "Телефон обязательно",
+      userEmail: {
+        required: "Обязателно укажите Email",
+        email: "Введите в формате sdfsd@asdasd.com"
+        }
+      }
+
+  });
   $('.control__form').validate({
     errorClass: "invalid",
     rules: {

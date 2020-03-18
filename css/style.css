@@ -673,7 +673,7 @@ img {
   color: #ffffff;
 }
 
-label.invalid {
+.invalid {
   color: red;
 }
 
@@ -1001,38 +1001,156 @@ label.invalid {
 }
 
 .request {
-  width: 1000px;
-  height: 1000px;
+  padding-bottom: 10rem;
+}
+
+.request__pig {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin-top: 2.71rem;
+  margin: auto;
+}
+
+.request__pig__text {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1.42rem;
+  line-height: 1.78rem;
+  color: #E3B873;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.request__label {
+  margin-top: 2rem;
+}
+
+.request__button {
+  width: 213px;
+  height: 51px;
+  margin-top: 2rem;
+  margin-left: 16.42rem;
+}
+
+.request__policy {
+  color: #ffffff;
+}
+
+.request__input {
+  font-size: 1.28rem;
+  line-height: 1.78rem;
+}
+
+.request__for {
+  margin-top: 130px;
+  margin-bottom: 2.71rem;
+  margin-left: 54px;
+  width: 441px;
+  background-color: #131313;
+  -webkit-box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  padding: 27px 48px;
+}
+
+.request__for__title {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1.42rem;
+  line-height: 1.78rem;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 4rem;
+  margin: 0;
+}
+
+.request__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .request__col {
-  width: 50%;
+  width: 55%;
+  position: relative;
+}
+
+.request__col--11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.request__col--form {
+  width: 45%;
+}
+
+.request__col--line {
+  position: absolute;
+  bottom: -9%;
+  left: -21%;
+  height: 100%;
+  width: 100%;
+  background: url("../img/request/line.svg") no-repeat center;
+}
+
+.request__col--bg {
+  background: url("../img/request/bg.jpg") no-repeat center;
 }
 
 .request__col__img {
-  margin: auto;
   text-align: center;
   vertical-align: middle;
   font-size: 18px;
-  background-color: #E3B873;
+  background: #E3B873 no-repeat center;
   border-radius: 50%;
   color: #ffffff;
-  height: 41px;
-  width: 41px;
+  padding: 10.5px;
 }
 
 .request__col__text {
-  font-size: 18px;
-  line-height: 21px;
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1.28rem;
+  line-height: 1.5rem;
+  margin-left: 10px;
 }
 
 .request__col__number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.request__col__number--1 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+}
+
+.request__col__number--2 {
+  position: absolute;
+  top: 40%;
+  left: 57%;
+}
+
+.request__col__number--3 {
+  position: absolute;
+  top: 61%;
+  left: 60%;
+}
+
+.request__col__number--4 {
+  position: absolute;
+  top: 83%;
+  left: 50%;
 }
 
 .types__text {
@@ -1567,6 +1685,9 @@ label.invalid {
 }
 
 @media screen and (max-width: 975px) {
+  .request {
+    display: none;
+  }
   .policy__lable {
     font-size: 1.5rem;
   }
