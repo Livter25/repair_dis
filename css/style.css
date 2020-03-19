@@ -1759,6 +1759,22 @@ img {
   background-color: #181818;
 }
 
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .map__title {
   color: #E3B873;
   margin-bottom: 26px;
@@ -1779,6 +1795,16 @@ img {
 
 .map__mail {
   margin-right: 15px;
+}
+
+.maper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 1256px) {
@@ -1826,6 +1852,11 @@ img {
 }
 
 @media screen and (max-width: 975px) {
+  .map__footer {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .fantasy {
     display: none;
   }
