@@ -1001,7 +1001,7 @@ img {
 }
 
 .request {
-  padding-bottom: 10rem;
+  padding-bottom: 16rem;
 }
 
 .request__pig {
@@ -1011,7 +1011,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%;
+  width: 90%;
   margin-top: 2.71rem;
   margin: auto;
 }
@@ -1132,7 +1132,7 @@ img {
 
 .request__col__number--1 {
   position: absolute;
-  top: 25%;
+  top: 26%;
   left: 46%;
 }
 
@@ -1152,6 +1152,99 @@ img {
   position: absolute;
   top: 83%;
   left: 50%;
+}
+
+.fantasy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 61.71rem;
+  background: #131313 url("../img/fantasy/bg.jpg") no-repeat center/cover;
+  -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  margin-bottom: 10rem;
+}
+
+.fantasy::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.8);
+}
+
+.fantasy__col__text {
+  display: block;
+  font-family: 'Futura Book', sans-serif;
+  font-size: 1.42rem;
+  color: #ffffff;
+  margin-top: 25px;
+  text-decoration: none;
+}
+
+.fantasy__col__text--primary {
+  color: #E3B873;
+}
+
+.fantasy__col__title {
+  font-size: 1.92rem;
+  line-height: 2.64rem;
+}
+
+.fantasy__col--1 {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding-top: 4%;
+  width: 40%;
+}
+
+.fantasy__col--2 {
+  width: 60%;
+}
+
+.fantasy__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fantasy__img__col--1 {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  margin-top: 13%;
+}
+
+.fantasy__img__col--2 {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+}
+
+.fantasy__img__top {
+  margin-bottom: 39px;
+}
+
+.fantasy__section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.owl-carousel {
+  margin-top: -18%;
+}
+
+.fantasy__col__text:hover {
+  color: #E3B873;
+  -webkit-text-decoration: underline solid #E3B873;
+          text-decoration: underline solid #E3B873;
 }
 
 .types__text {
@@ -1706,6 +1799,9 @@ img {
 }
 
 @media screen and (max-width: 975px) {
+  .fantasy {
+    display: none;
+  }
   .request {
     display: none;
   }

@@ -1,4 +1,16 @@
 $(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    items:1,
+    loop:false,
+    center:true,
+    margin:10,
+    URLhashListener:true,
+    autoplayHoverPause:true,
+    startPosition: 'URLHash',
+    nav: true,
+    animateOut: 'slideOutUp',
+    animateIn: 'slideInUp'
+  });
   new WOW().init();
   // маски
   $('[type=tel]').mask('+7(000)-000-00-00', {placeholder: "+7(000)-000-00-00"});
