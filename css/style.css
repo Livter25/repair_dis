@@ -838,13 +838,18 @@ img {
 
 .hero .skroll-up {
   position: fixed;
+  background-color: transparent;
+  left: 7%;
+  bottom: 4%;
+  min-width: 6rem;
+  min-height: 6rem;
   z-index: 2;
 }
 
 .hero .skroll-up::after {
   content: '';
   background: url("../img/Vector.svg") no-repeat center;
-  margin-left: 12px;
+  margin: auto;
   width: 30px;
   height: 30px;
   border: 2px solid #E3B873;
@@ -1834,6 +1839,9 @@ img {
 }
 
 @media screen and (max-width: 992px) {
+  .skroll-up {
+    left: -13%;
+  }
   .request__col--bg {
     margin-right: 0;
   }
@@ -1863,9 +1871,6 @@ img {
   .request {
     display: none;
   }
-  .policy__lable {
-    font-size: 1.5rem;
-  }
   .client {
     display: none;
   }
@@ -1876,7 +1881,7 @@ img {
     padding-bottom: 98rem;
   }
   .control {
-    margin-top: -93rem;
+    margin-top: -95rem;
   }
   .control__text__video {
     margin-bottom: 0;
@@ -1921,17 +1926,14 @@ img {
   .bcg {
     height: 100%;
   }
-  .section {
-    background-color: #131313;
-  }
-  .section-title {
-    color: #ffffff;
-  }
   .section-title--primary {
     color: #E3B873;
   }
   .section__text {
     color: #ffffff;
+  }
+  .types {
+    padding-top: 27px;
   }
   .types__card {
     margin-bottom: 4.29rem;
@@ -1948,20 +1950,12 @@ img {
     padding: 0 5%;
     display: block;
   }
-  .label {
-    font-size: 1.5rem;
-  }
-  .input {
-    font-size: 2rem;
-  }
   .team {
+    background-color: #131313;
     padding-top: 40rem;
   }
   .footer {
     background: #131313;
-  }
-  .footer__title {
-    font-size: 2rem;
   }
   .footer-wrap {
     background-color: transparent;
@@ -2004,7 +1998,7 @@ img {
     padding-bottom: 98rem;
   }
   .control {
-    margin-top: -93rem;
+    margin-top: -96rem;
   }
   .control__button {
     width: 100%;
@@ -2053,9 +2047,6 @@ img {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem;
-  }
-  .section {
-    background-color: #131313;
   }
   .section-title__text {
     text-align: left;
@@ -2086,11 +2077,8 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .label {
-    font-size: 1.5rem;
-  }
-  .input {
-    font-size: 2rem;
+  .header-bottom {
+    display: none;
   }
   .team {
     padding-top: 40rem;
@@ -2098,8 +2086,8 @@ img {
   .footer {
     background: #131313;
   }
-  .footer__title {
-    font-size: 2rem;
+  .footer__map {
+    padding-bottom: 10rem;
   }
   .footer-wrap {
     background-color: transparent;
@@ -2142,7 +2130,7 @@ img {
     padding-bottom: 98rem;
   }
   .control {
-    margin-top: -93rem;
+    margin-top: -96rem;
   }
   .control__button {
     width: 100%;
@@ -2191,9 +2179,6 @@ img {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem;
-  }
-  .section {
-    background-color: #131313;
   }
   .section-title__text {
     text-align: left;
@@ -2228,7 +2213,7 @@ img {
     padding-bottom: 98rem;
   }
   .control {
-    margin-top: -95rem;
+    margin-top: -82rem;
   }
   .control__video {
     min-height: 207px;
