@@ -685,6 +685,21 @@ img {
   border-bottom: 2px solid red;
 }
 
+em.invalid {
+  position: absolute;
+  bottom: -16px;
+}
+
+.policy {
+  position: relative;
+}
+
+label.invalid {
+  position: absolute;
+  bottom: -16px;
+  left: 30px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -921,6 +936,7 @@ img {
 }
 
 .control__col {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1079,6 +1095,7 @@ img {
 }
 
 .request__col--11 {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1729,6 +1746,7 @@ img {
 }
 
 .footer__col--1 {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1739,6 +1757,7 @@ img {
 }
 
 .footer__col--2 {
+  position: relative;
   margin-bottom: 48px;
 }
 

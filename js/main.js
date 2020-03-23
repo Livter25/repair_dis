@@ -17,6 +17,13 @@ $(document).ready(function () {
   
   //валидация формы 
   $('.modal__form').validate({
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+  },
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
@@ -65,6 +72,13 @@ $(document).ready(function () {
 
   });
   $('.request__form').validate({
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+  },
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
@@ -80,7 +94,7 @@ $(document).ready(function () {
       });
     },
     errorClass: "invalid",
-    errorElement: "div",
+    errorElement: "em",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -113,6 +127,13 @@ $(document).ready(function () {
 
   });
   $('.control__form').validate({
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+  },
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
@@ -128,6 +149,7 @@ $(document).ready(function () {
       });
     },
     errorClass: "invalid",
+    errorElement: "em",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -153,6 +175,13 @@ $(document).ready(function () {
 
   });
   $('.footer__form').validate({
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
+  
+       error.insertAfter($(element));
+  },
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
@@ -168,6 +197,7 @@ $(document).ready(function () {
       });
     },
     errorClass: "invalid",
+    errorElement: "em",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
