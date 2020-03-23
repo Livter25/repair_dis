@@ -575,6 +575,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   line-height: 138.6%;
 }
 
@@ -591,6 +592,7 @@ img {
 .section-title__heading {
   text-transform: uppercase;
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   line-height: 138%;
 }
 
@@ -753,6 +755,11 @@ label.invalid {
   margin-right: 45px;
 }
 
+.menu-title {
+  text-decoration: none;
+  color: #E3B873;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -907,6 +914,7 @@ label.invalid {
 
 .title {
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   text-transform: uppercase;
   font-size: 2.857rem;
   margin: 0;
@@ -1352,6 +1360,7 @@ label.invalid {
   margin-bottom: 0.7rem;
   font-size: 1.29rem;
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
 }
 
 .card__title--team {
@@ -1456,6 +1465,7 @@ label.invalid {
   line-height: 26px;
   text-align: center;
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   margin: 0;
   margin-bottom: 2.428rem;
 }
@@ -1539,6 +1549,7 @@ label.invalid {
 
 .swiper-slide__title {
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   font-size: 1.07rem;
   line-height: 1.64rem;
   text-transform: uppercase;
@@ -1564,6 +1575,7 @@ label.invalid {
   font-size: 1.285rem;
   line-height: 1.78rem;
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   color: #E3B873;
   text-transform: uppercase;
   margin-bottom: 0.64rem;
@@ -1660,6 +1672,7 @@ label.invalid {
 
 .client__card__title__h2 {
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   font-size: 1.28rem;
   line-height: 1.64rem;
 }
@@ -1767,6 +1780,7 @@ label.invalid {
 
 .footer__title {
   font-family: 'Yeseva One', cursive;
+  font-weight: normal;
   font-size: 1.42rem;
   line-height: 2rem;
   text-align: center;
