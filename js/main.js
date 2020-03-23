@@ -1,4 +1,17 @@
 $(document).ready(function () {
+  var modal = $('.modal'),
+      modalbtn = $('[data-toggle=modal]'),
+      closebtn = $('.modal__close')
+      
+  
+  modalbtn.on('click', function() {
+      $(modal).toggleClass('modal--visible');
+      
+  } )
+  closebtn.on('click', function() {
+      $(modal).toggleClass('modal--visible');
+      
+  } );
   $(".owl-carousel").owlCarousel({
     items:1,
     loop:false,
@@ -17,6 +30,20 @@ $(document).ready(function () {
   
   //валидация формы 
   $('.modal__form').validate({
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработа. Ответ сревера'+response);
+          alert('Форма отправлена мы свяжемся с  вами  в течении дня.');
+          $(modal).toggleClass('modal--visible');
+          $(form)[0].reset();
+          
+        }
+      });
+    },
     errorClass: "invalid",
     errorElement: "div",
     rules: {
@@ -32,7 +59,8 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      policycheckbox: "required",
     },
     messages: {
       userName:{
@@ -44,7 +72,8 @@ $(document).ready(function () {
       userEmail: {
         required: "Обязателно укажите Email",
         email: "Введите в формате sdfsd@asdasd.com"
-        }
+        },
+      policycheckbox: "Согласие обязательно"
       }
 
   });
@@ -60,6 +89,7 @@ $(document).ready(function () {
         
       },
       userPhone: "required",
+      policycheckbox: "required",
       // compound rule
       userEmail: {
         required: true,
@@ -76,7 +106,8 @@ $(document).ready(function () {
       userEmail: {
         required: "Обязателно укажите Email",
         email: "Введите в формате sdfsd@asdasd.com"
-        }
+        },
+      policycheckbox: "Согласие обязательно",
       }
 
   });
@@ -90,6 +121,7 @@ $(document).ready(function () {
         maxlength: 15,
       },
       userPhone: "required",
+      policycheckbox: "required",
       // compound rule
       
     },
@@ -100,11 +132,24 @@ $(document).ready(function () {
         maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
       } ,
       userPhone: "Телефон обязательно",
+      policycheckbox: "Согласие обязательно",
       
       }
 
   });
   $('.footer__form').validate({
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $form().serialize(),
+        dataType: "dataType",
+        success: function (response) {
+          console.log('Ajax сработа. Ответ сревера'+response)
+          
+        }
+      });
+    },
     errorClass: "invalid",
     rules: {
       // simple rule, converted to {required:true}
@@ -114,10 +159,11 @@ $(document).ready(function () {
         maxlength: 15,
       },
       userPhone: "required",
+      policycheckbox: "required",
       // compound rule
-      userEmail: {
+      userQustion: {
         required: true,
-        email: true
+        
       }
     },
     messages: {
@@ -127,9 +173,10 @@ $(document).ready(function () {
         maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
       } ,
       userPhone: "Телефон обязательно",
-      userEmail: {
-        required: "Обязателно укажите Email",
-        email: "Введите в формате sdfsd@asdasd.com"
+      policycheckbox: "Согласие обязательно",
+      userQustion: {
+        required: "Обязателно укажите вопрос",
+        
         }
       }
 
@@ -149,19 +196,6 @@ $(document).ready(function () {
 
 
 
-    var modal = $('.modal'),
-        modalbtn = $('[data-toggle=modal]'),
-        closebtn = $('.modal__close')
-        
-
-    modalbtn.on('click', function() {
-        $(modal).toggleClass('modal--visible');
-        
-    } )
-    closebtn.on('click', function() {
-        $(modal).toggleClass('modal--visible');
-        
-    } );
 
     
 
