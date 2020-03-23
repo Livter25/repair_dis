@@ -85,12 +85,24 @@ $(document).ready(function () {
 
   });
   $('.request__form').validate({
-    // errorPlacement: function (error, element) {
-    //   if (element.attr("type") == "checkbox") {
-    //       return element.next('label').append(error);
-    //   }
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
   
-    //    error.insertAfter($(element));
+       error.insertAfter($(element));
+    },
+    // submitHandler: function(form) {
+    //   $.ajax({
+    //     type: "POST",
+    //     url: "send.php",
+    //     data: $form().serialize(),
+    //     dataType: "dataType",
+    //     success: function (response) {
+    //       console.log('Ajax сработа. Ответ сревера'+response)
+          
+    //     }
+    //   });
     // },
     errorClass: "invalid",
     errorElement: "em",
@@ -126,13 +138,26 @@ $(document).ready(function () {
 
   });
   $('.control__form').validate({
-    // errorPlacement: function (error, element) {
-    //   if (element.attr("type") == "checkbox") {
-    //       return element.next('label').append(error);
-    //   }
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+          return element.next('label').append(error);
+      }
   
-    //    error.insertAfter($(element));
+       error.insertAfter($(element));
+    },
+    // submitHandler: function(form) {
+    //   $.ajax({
+    //     type: "POST",
+    //     url: "send.php",
+    //     data: $form().serialize(),
+    //     dataType: "dataType",
+    //     success: function (response) {
+    //       console.log('Ajax сработа. Ответ сревера'+response)
+          
+    //     }
+    //   });
     // },
+    
     errorClass: "invalid",
     errorElement: "em",
     rules: {
