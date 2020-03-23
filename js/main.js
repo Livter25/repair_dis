@@ -100,7 +100,6 @@ $(document).ready(function () {
         success: function (response) {
           console.log('Ajax сработа. Ответ сревера'+response);
           alert('Форма отправлена мы свяжемся с  вами  в течении дня.');
-          $(modal).toggleClass('modal--visible');
           $(form)[0].reset();
           
         }
@@ -155,7 +154,6 @@ $(document).ready(function () {
         success: function (response) {
           console.log('Ajax сработа. Ответ сревера'+response);
           alert('Форма отправлена мы свяжемся с  вами  в течении дня.');
-          $(modal).toggleClass('modal--visible');
           $(form)[0].reset();
           
         }
@@ -204,7 +202,6 @@ $(document).ready(function () {
         success: function (response) {
           console.log('Ajax сработа. Ответ сревера'+response);
           alert('Форма отправлена мы свяжемся с  вами  в течении дня.');
-          $(modal).toggleClass('modal--visible');
           $(form)[0].reset();
           
         }
