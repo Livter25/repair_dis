@@ -328,6 +328,21 @@ $(document).ready(function () {
         
 
   });
+  var mySwiper = new Swiper ('.swiper-container__fantasy', {
+    // Optional parameters
+    loop: true,
+    
+    
+    
+    navigation: {
+        nextEl: '.swiper-button-n',
+        prevEl: '.swiper-button-p',
+        
+      },
+      
+      
+
+  });
     
 
      

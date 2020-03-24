@@ -862,7 +862,7 @@ label.invalid {
   position: fixed;
   background-color: transparent;
   left: 7%;
-  bottom: 4%;
+  bottom: 3%;
   min-width: 6rem;
   min-height: 6rem;
   z-index: 2;
@@ -1275,6 +1275,14 @@ label.invalid {
   color: #E3B873;
   -webkit-text-decoration: underline solid #E3B873;
           text-decoration: underline solid #E3B873;
+}
+
+.mob__fantasy__title {
+  text-align: center;
+}
+
+.mob__fantasy {
+  display: none;
 }
 
 .types__text {
@@ -1893,6 +1901,42 @@ label.invalid {
 }
 
 @media screen and (max-width: 975px) {
+  .mob__fantasy {
+    display: block;
+    margin-bottom: -41%;
+  }
+  .mob__fantasy__title {
+    text-align: center;
+    color: #E3B873;
+    font-weight: normal;
+  }
+  .mob__fantasy__img {
+    margin: auto;
+  }
+  .swiper-button-p {
+    background: url(../img/fantasy/pr.svg) no-repeat center/cover;
+    background-color: #E3B873;
+    border-radius: 50%;
+    width: 10%;
+    height: 15%;
+    background-size: 30%;
+    top: 50%;
+    position: absolute;
+    z-index: 11;
+    left: 2%;
+  }
+  .swiper-button-n {
+    background: url(../img/fantasy/next.svg) no-repeat center/cover;
+    background-color: #E3B873;
+    border-radius: 50%;
+    width: 10%;
+    height: 15%;
+    background-size: 173%;
+    top: 50%;
+    position: absolute;
+    z-index: 11;
+    left: 88%;
+  }
   .map__footer {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1966,7 +2010,7 @@ label.invalid {
     color: #ffffff;
   }
   .types {
-    padding-top: 27px;
+    padding-top: 39%;
   }
   .types__card {
     margin-bottom: 4.29rem;
@@ -2110,6 +2154,9 @@ label.invalid {
 }
 
 @media screen and (max-width: 768px) {
+  .mob__fantasy {
+    display: block;
+  }
   .header-bottom {
     display: none;
   }
@@ -2242,6 +2289,9 @@ label.invalid {
 }
 
 @media screen and (max-width: 576px) {
+  .mob__fantasy {
+    display: block;
+  }
   .project {
     padding-bottom: 98rem;
   }
