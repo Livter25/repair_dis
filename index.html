@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +16,12 @@
             <div class="menu">
                 <div class="logo menu__logo wow fadeInLeft	" data-wow-delay='0.2s'>Repair Design Project</div>
                 <nav class="nav menu__nav">
-                    <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='0.4s'>Главная</a>
-                    <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='0.6s'>Проекты</a>
-                    <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='0.8s'>Замер  </a>
-                    <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='1s'>Команда</a>
-                    <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='1.2s'>Отзывы</a>
-                    <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='1.4s'>Контакты</a> 
+                    <a href="#main" class="nav__item  wow fadeInRight" data-wow-delay='0.4s'>Главная</a>
+                    <a href="#project" class="nav__item  wow fadeInRight" data-wow-delay='0.6s'>Проекты</a>
+                    <a href="#steps" class="nav__item  wow fadeInRight" data-wow-delay='0.8s'>Замер  </a>
+                    <a href="#team" class="nav__item  wow fadeInRight" data-wow-delay='1s'>Команда</a>
+                    <a href="#qestion" class="nav__item  wow fadeInRight" data-wow-delay='1.2s'>Отзывы</a>
+                    <a href="#contacs" class="nav__item  wow fadeInRight" data-wow-delay='1.4s'>Контакты</a> 
 
 
                 </nav>
@@ -39,7 +39,7 @@
         <!-- /.container -->
     </header>
     <main>
-        <section class="hero" >
+        <section class="hero" id="main" >
             <div class="instagram hero__instagram">
                <a href="#" class="instagram__link">Instagram</a>
             </div>
@@ -55,11 +55,11 @@
             </div>
             <!-- /.container -->  
 
-            <a href="#" class="hero__skroll-down skroll-down">Листайте вниз</a>
+            <a href="#project" class="hero__skroll-down skroll-down">Листайте вниз</a>
             <a href="#" class="hero__skroll-down skroll-up"></a>
         </section>
         <!-- /.hero -->
-        <section class="section section--dark project">
+        <section class="section section--dark project" id="project">
             <div class="container">
                 <div class="row">
                     <div class="col-50">
@@ -160,9 +160,9 @@
                             
                             <div class="swiper-wrapper swiper-no-swiping">
                                 
-                                <div class="swiper-slide"><img src="img/projects.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/projects.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/projects.jpg" alt=""></div>
+                                <div class="swiper-slide"><img data-src="img/projects.jpg" alt=""></div>
+                                <div class="swiper-slide"><img data-src="img/projects.jpg" alt=""></div>
+                                <div class="swiper-slide"><img data-src="img/projects.jpg" alt=""></div>
                                 
                                 
                                 
@@ -182,13 +182,13 @@
                     <h2 class="section-title__control ">Онлайн контроль</h2>
                     <!-- /.section-title__img -->
                     <div class="section-title__img">
-                        <img src="img/Camera.svg" alt="P1">
+                        <img data-src="img/Camera.svg" alt="P1">
                     </div>
                     <!-- /.section-title__heading -->
                 </div>
                 <!-- /.section-title -->
                 <div class="control__video video">
-                    <img src="img/play-icon.svg" alt="play-icon" class="video__play">
+                    <img data-src="img/play-icon.svg" alt="play-icon" class="video__play">
                 </div>
                 <div class="control__text">
                     
@@ -196,11 +196,11 @@
                 </div>
                 <form action="send.php" method="POST" class=" form control__form">
                     <div class="control__col">
-                        <label for="user-name" class="label form__label label--video">Имя</label>
+                        <label for="control-user-name" class="label form__label label--video">Имя</label>
                         <input type="text" name="userName" class=" in control__form--input " id="control-user-name" placeholder="Как вас зовут:"> 
                     </div>
                     <div class="control__col">
-                        <label for="user-form" class="label form__label label--video">Телефон</label>
+                        <label for="control-user-phone" class="label form__label label--video">Телефон</label>
                         <input type="tel" name="userPhone" class="  in control__form--input  " id="control-user-phone" placeholder="Ваш номер телефона:">
                     </div>
                     
@@ -208,8 +208,7 @@
                     <div class="policy control__policy">
                         <input type="checkbox" name="policycheckbox" id="policy-checkbox-control" class="checkbox policy__checkbox" checked>
                         <label for="policy-checkbox-control" class="policy__lable">я соглашаюсь с обработкой данных</label>
-                        <!-- <input type="checkbox" name="policycheckbox" id="policy-checkbox-control" class="checkbox policy__checkbox" checked>
-                        <label for="policy-checkbox" class="policy__lable control__policy--size">я соглашаюсь с обработкой данных</label> -->
+                        
                     </div>
                     
                 </form>
@@ -247,16 +246,16 @@
                         <form action="send.php" method="POST" class="form request__form">
                             
                             <div class=" request__col--11">
-                                <label for="user-name" class="label form__label label--light request__label">Имя</label>
+                                <label for="request-user-name" class="label form__label label--light request__label">Имя</label>
                                 <input type="text" name="userName" class="input form__input request__input " id="request-user-name" placeholder="Как вас зовут:">
                             </div>
                             <div class=" request__col--11">
-                                <label for="user-form" class="label form__label label--light request__label">Телефон</label>
+                                <label for="request-user-form" class="label form__label label--light request__label">Телефон</label>
                                 <input type="tel" name="userPhone" class="input form__input request__input " id="request-user-form" placeholder="Ваш номер телефона:">
                             </div>
                             
                             <div class=" request__col--11">
-                                <label for="user-email" class="label form__label label--light request__label">Email</label>
+                                <label for="request-user-email" class="label form__label label--light request__label">Email</label>
                                 <input type="email" name="userEmail" class="input form__input request__input" id="request-user-email" placeholder="Ваш email">
                             </div>
                             
@@ -270,7 +269,7 @@
                         </form> 
                         </div>
                         <div class="request__pig">
-                            <img src="img/pig.svg" alt="pig" class="request__pig__img">
+                            <img data-src="img/pig.svg" alt="pig" class="request__pig__img">
                             <span class="request__pig__text">Это поможет сэкономить 10 - 20% <br>от стоимости материалов
                             </span>
                         </div>
@@ -284,7 +283,7 @@
                 <div class="fantasy__section">
                     <div class="fantasy__col--1">
                         <h2 class="fantasy__col__title section-title--primary section-title__heading">Мы реализуем ваши <br>самые смелые фантазии</h2>
-                        <a  href="#fantasy__1"class="fantasy__col__text ">Американская классика</a>
+                        <a  href="#fantasy__1" class="fantasy__col__text ">Американская классика</a>
                         <a href="#fantasy__2"  class="fantasy__col__text">Имперский стиль</a>
                         <a  href="#fantasy__3" class="fantasy__col__text">Классика</a>
                         <a  href="#fantasy__4" class="fantasy__col__text">Лофт</a>
@@ -427,13 +426,13 @@
             </div>
         </section>
 
-        <section class="section types">
+        <section class="section types" >
             <div class="container">
                 <div class="section-title types__section-title">
                     <h2 class="section-title">Виды ремонта</h2>
                     <!-- /.section-title__img -->
                     <div class="section-title__img">
-                        <img src="img/Vector_2.svg" alt="P1">
+                        <img data-src="img/Vector_2.svg" alt="P1">
                     </div>
                     <!-- /.section-title__heading -->
                 </div>
@@ -441,7 +440,7 @@
                 <div class="row">
                     <div class="col col-30 wow bounceInLeft" data-wow-delay='0.4s' >
                         <div class="card types__card">
-                            <img src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__img">
+                            <img data-src="img/types/type-1.jpg" alt="Косметический ремонт" class="card__img">
                             <div class="card__text">
                                 <h3 class="card__title">Косметический ремонт</h3>
                                 <!-- /.card__title -->
@@ -469,7 +468,7 @@
                     <!-- /.col -->
                     <div class="col col-30 wow bounceInLeft" data-wow-delay='0.6s'>
                         <div class="card types__card">
-                            <img src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__img">
+                            <img data-src="img/types/type-2.jpg" alt="Капитальный ремонт" class="card__img">
                             <div class="card__text">
                                 <h3 class="card__title">Капитальный ремонт</h3>
                                 <!-- /.card__title -->
@@ -496,7 +495,7 @@
                     <!-- /.col -->
                     <div class="col col-30 wow bounceInLeft" data-wow-delay='0.8s'>
                         <div class="card types__card">
-                            <img src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__img">
+                            <img data-src="img/types/type-3.jpg" alt="Дизайнерский ремонт" class="card__img">
                             <div class="card__text">
                                 <h3 class="card__title">Дизайнерский ремонт</h3>
                                 <!-- /.card__title -->
@@ -534,17 +533,12 @@
                 <div class="swiper-container swiper-container__fantasy">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                          <img src="img/fantasy/bg.jpg" alt="bg">
+                          <img data-src="img/fantasy/bg.jpg" alt="bg">
                       </div>
-                      <div class="swiper-slide"><img src="img/fantasy/bg.jpg" alt="bg"></div>
-                      <div class="swiper-slide"><img src="img/fantasy/bg.jpg" alt="bg"></div>
-                      <div class="swiper-slide"><img src="img/fantasy/bg.jpg" alt="bg"></div>
-                      <div class="swiper-slide"><img src="img/fantasy/bg.jpg" alt="bg"></div>
-                      <div class="swiper-slide"><img src="img/fantasy/bg.jpg" alt="bg"></div>
-                      <div class="swiper-slide"><img src="img/fantasy/bg.jpg" alt="bg"></div>
-                      <div class="swiper-slide"><img src="img/fantasy/bg.jpg" alt="bg"></div>
-                      <div class="swiper-slide"><img src="img/fantasy/bg.jpg" alt="bg"></div>
-                      <div class="swiper-slide"><img src="img/fantasy/bg.jpg" alt="bg"></div>
+                      <div class="swiper-slide"><img data-src="img/fantasy/bg.jpg" alt="bg"></div>
+                      <div class="swiper-slide"><img data-src="img/fantasy/bg.jpg" alt="bg"></div>
+                      <div class="swiper-slide"><img data-src="img/fantasy/bg.jpg" alt="bg"></div>
+                      
                     </div>
                     <!-- Add Arrows -->
                     <div class=" swiper-button-n"></div>
@@ -560,7 +554,7 @@
                 <div class="section-title types__section-title">
                     <h2 class="section-title__heading">Дизайн проект</h2>
                     <div class="section-title__img">
-                        <img src="img/pen.svg" alt="Дизайн проект">
+                        <img data-src="img/pen.svg" alt="Дизайн проект">
                     </div>
                 </div>
                 <p class="section__text">Дизайн-проект не только помогает сделать ремонт вашей квартиры более современным,<br>но и значительно удешевляет материалы и сокращает время ремонтных работ</p>
@@ -569,7 +563,7 @@
                 <div class="row">
                     <div class="col col__disg " >
                         <div class="card types__card">
-                            <img src="img/types/type-1.jpg" alt="Минимальный" class="card__img--1">
+                            <img data-src="img/types/type-1.jpg" alt="Минимальный" class="card__img--1">
                             <div class="card__text">
                                 <h3 class="card__title">Минимальный</h3>
                                 <!-- /.card__title -->
@@ -593,7 +587,7 @@
                     <!-- /.col -->
                     <div class="col col__disg " >
                         <div class="card types__card">
-                            <img src="img/types/type-3.jpg" alt="Стандартный" class="card__img">
+                            <img data-src="img/types/type-3.jpg" alt="Стандартный" class="card__img">
                             <div class="card__text">
                                 <h3 class="card__title">Стандартный</h3>
                                 <!-- /.card__title -->
@@ -620,7 +614,7 @@
                     <!-- /.col -->
                     <div class="col col__disg " >
                         <div class="card types__card">
-                            <img src="img/types/type-2.jpg" alt="Полный" class="card__img">
+                            <img data-src="img/types/type-2.jpg" alt="Полный" class="card__img">
                             <div class="card__text">
                                 <h3 class="card__title">Полный</h3>
                                 <!-- /.card__title -->
@@ -660,7 +654,7 @@
             
         </section>
         <!-- /.section__typs -->
-        <section class="section section--dark steps">
+        <section class="section section--dark steps" id="steps">
             <div class="container">
                 <div class="row">
                     <div class=" col-steps">
@@ -744,41 +738,41 @@
                         <div class="swiper-container swiper-container_21 ">
 
                             <div class="col-chos__info"> 
-                                <a  href="#" class="col-chos__ssl  col-chos__ssl1" data-toggle="col" >
+                                <a  href="#steps" class="col-chos__ssl  col-chos__ssl1" data-toggle="col" >
                                     <span class="col-chos__title ">01</span>
                                     <p class="col-chos__text">Выезд на замер помещения</p>
                                 </a>
-                                <span  class="col-chos__ssl" >
+                                <a  href="#steps" class="col-chos__ssl  col-chos__ssl1" data-toggle="col" >
                                     <span class="col-chos__title">02</span>
                                     <p class="col-chos__text">Составление <br>сметы</p>
-                                </span>
-                                <span  class="col-chos__ssl" >
+                                </a>
+                                <a  href="#steps" class="col-chos__ssl  col-chos__ssl1" data-toggle="col" >
                                     <span class="col-chos__title">03</span>
                                     <p class="col-chos__text">Разработка  дизайн проекта</p>
-                                </span>
-                                <span  class="col-chos__ssl" >
+                                </a>
+                                <a  href="#steps" class="col-chos__ssl  col-chos__ssl1" data-toggle="col" >
                                     <span class="col-chos__title">04</span>
                                     <p class="col-chos__text">Закупка расходных материалов</p>
-                                </span>
-                                <span  class="col-chos__ssl" >
+                                </a>
+                                <a  href="#" class="col-chos__ssl  col-chos__ssl1" data-toggle="col" >
                                     <span class="col-chos__title">05</span>
                                     <p class="col-chos__text">Ремонтно-отделочные работы</p>
-                                </span>
-                                <span  class="col-chos__ssl" >
+                                </a>
+                                <a  href="#" class="col-chos__ssl  col-chos__ssl1" data-toggle="col" >
                                     <span class="col-chos__title">06</span>
                                     <p class="col-chos__text">Приемка-сдача работ</p>
-                                </span>
+                                </a>
                             </div>
                         
 
                             <div class="swiper-wrapper swiper-no-swiping">
                                 
-                                <div class="swiper-slide"><img src="img/image3.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/image3.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/image3.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/image3.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/image3.jpg" alt=""></div>
-                                <div class="swiper-slide"><img src="img/image3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img data-src="img/image3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img data-src="img/image3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img data-src="img/image3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img data-src="img/image3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img data-src="img/image3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img data-src="img/image3.jpg" alt=""></div>
                                 
                                 
                                 
@@ -791,12 +785,12 @@
             </div>
         </section>
         
-        <section class="section types team ">
+        <section class="section types team " id="team">
             <div class="container">
                 <div class="section-title types__section-title">
                     <h2 class="section-title__heading section-title__team">Наша команда</h2>
                     <div class="section-title__img">
-                        <img src="img/team.svg" alt="Наша команда">
+                        <img data-src="img/team.svg" alt="Наша команда">
                     </div>
                 </div>
                 <p class="section__text section__text__team">Наша команда помогла стать счастливее более <br>чем 500 семьям, и мы не собираемся останавливаться</p>
@@ -806,9 +800,9 @@
                     <div class="col">
                         <div class="card types__card">
                             <span class="sub card__sub  card__sub_wtf">
-                                <img src="img/team/idea.svg" alt="idea">
+                                <img data-src="img/team/idea.svg" alt="idea">
                             </span>
-                            <img src="img/team/6.jpg" alt="Алексей Колмаков" class="card__img--1">
+                            <img data-src="img/team/6.jpg" alt="Алексей Колмаков" class="card__img--1">
                             <div class="card__text card__text--team">
                                 <h3 class="card__title card__title--team">Алексей Колмаков</h3>
                                 
@@ -827,9 +821,9 @@
                     <div class="col">
                         <div class="card types__card">
                             <span class="sub card__sub">
-                                <img src="img/team/pen.svg" alt="idea">
+                                <img data-src="img/team/pen.svg" alt="idea">
                             </span>
-                            <img src="img/team/2.jpg" alt="Алиса Сухорукова" class="card__img">
+                            <img data-src="img/team/2.jpg" alt="Алиса Сухорукова" class="card__img">
                             <div class="card__text card__text--team">
                                 <h3 class="card__title card__title--team">Алиса Сухорукова</h3>
                                 
@@ -847,9 +841,9 @@
                     <div class="col">
                         <div class="card types__card">
                             <span class="sub card__sub">
-                                <img src="img/team/portfolio.svg" alt="idea">
+                                <img data-src="img/team/portfolio.svg" alt="idea">
                             </span>
-                            <img src="img/team/3.jpg" alt="Давид Волынев" class="card__img">
+                            <img data-src="img/team/3.jpg" alt="Давид Волынев" class="card__img">
                             <div class="card__text card__text--team">
                                 <h3 class="card__title  card__title--team">Давид Волынев</h3>
                                 
@@ -872,13 +866,13 @@
             
         </section>
 
-        <section class="section client">
+        <section class="section client" id="qestion">
             <div class="container">
                 <div class=" types__section-title">
                     <h2 class="section-title">Наши клиенты</h2>
                     <!-- /.section-title__img -->
                     <div class="section-title__img">
-                        <img src="img/hand.svg" alt="P1">
+                        <img data-src="img/hand.svg" alt="P1">
                     </div>
                     <p class="section__text section__text__client">80% наших клиентов рекомендуют нас<br> своим знакомым и друзьям</p>
                     <!-- /.section-title__heading -->
@@ -886,7 +880,7 @@
                 <div class="client__card">
                     <div class="client__card__col">
                         <div class="client__card__title">
-                            <img src="img/client/1.jpg" alt="client1" class="client__card__title__img">
+                            <img data-src="img/client/1.jpg" alt="client1" class="client__card__title__img">
                             <h2 class="client__card__title__h2">Савельева <br>Екатерина Львовна</h2>
                         </div>
                         <p class="client__card__text">
@@ -894,18 +888,18 @@
                         </p>
                         <div class="client__card__bottom client__card__bottom--1">
                             <div class="client__card__bottom-icon">
-                                <img src="img/window.svg" alt="window" class="client__card__bottom-icon--img">
+                                <img data-src="img/window.svg" alt="window" class="client__card__bottom-icon--img">
                                 <p class="client__card__bottom-icon__text">40 m<sup>2</sup></p>
                             </div>
                             <div class="client__card__bottom-icon">
-                                <img src="img/48days.svg" alt="48days" class="client__card__bottom-icon--img">
+                                <img data-src="img/48days.svg" alt="48days" class="client__card__bottom-icon--img">
                                 <p class="client__card__bottom-icon__text">48 дней</p>
                             </div>
                         </div>
                     </div>
                     <div class="client__card__col">
                         <div class="client__card__title">
-                            <img src="img/client/2.jpg" alt="client2" class="client__card__title__img">
+                            <img data-src="img/client/2.jpg" alt="client2" class="client__card__title__img">
                             <h2 class="client__card__title__h2">Большов Михаил <br>Анатольевич</h2>
                         </div>
                         <p class="client__card__text">
@@ -913,18 +907,18 @@
                         </p>
                         <div class="client__card__bottom client__card__bottom--2">
                             <div class="client__card__bottom-icon">
-                                <img src="img/window.svg" alt="window" class="client__card__bottom-icon--img">
+                                <img data-src="img/window.svg" alt="window" class="client__card__bottom-icon--img">
                                 <p class="client__card__bottom-icon__text">90 м<sup>2</sup></p>
                             </div>
                             <div class="client__card__bottom-icon">
-                                <img src="img/48days.svg" alt="48days" class="client__card__bottom-icon--img">
+                                <img data-src="img/48days.svg" alt="48days" class="client__card__bottom-icon--img">
                                 <p class="client__card__bottom-icon__text">128 дней</p>
                             </div>
                         </div>
                     </div>
                     <div class="client__card__col">
                         <div class="client__card__title">
-                            <img src="img/client/3.jpg" alt="client3" class="client__card__title__img">
+                            <img data-src="img/client/3.jpg" alt="client3" class="client__card__title__img">
                             <h2 class="client__card__title__h2">Хасанов Даниил <br>Муратович</h2>
                         </div>
                         <p class="client__card__text">
@@ -932,11 +926,11 @@
                         </p>
                         <div class="client__card__bottom client__card__bottom--3">
                             <div class="client__card__bottom-icon">
-                                <img src="img/window.svg" alt="window" class="client__card__bottom-icon--img">
+                                <img data-src="img/window.svg" alt="window" class="client__card__bottom-icon--img">
                                 <p class="client__card__bottom-icon__text">56 м<sup>2</sup></p>
                             </div>
                             <div class="client__card__bottom-icon">
-                                <img src="img/48days.svg" alt="48days" class="client__card__bottom-icon--img">
+                                <img data-src="img/48days.svg" alt="48days" class="client__card__bottom-icon--img">
                                 <p class="client__card__bottom-icon__text">86 дней</p>
                             </div>
                         </div>
@@ -955,18 +949,14 @@
                 <form action="send.php" method="POST" class="form footer__form">
                     <div class=" footer__col--1">
                         <div class="footer__col footer__col--11">
-                            <label for="user-name" class="label form__label label--light">Имя</label>
+                            <label for="footer-user-name" class="label form__label label--light">Имя</label>
                             <input type="text" name="userName" class="input form__input footer__input " id="footer-user-name" placeholder="Как вас зовут:">
                         </div>
                         <div class="footer__col footer__col--11">
-                            <label for="user-form" class="label form__label label--light">Телефон</label>
+                            <label for="footer-user-form" class="label form__label label--light">Телефон</label>
                             <input type="tel" name="userPhone" class="input form__input footer__input " id="footer-user-form" placeholder="Ваш номер телефона:">
                         </div>
                     </div>
-                    <!-- <div class="footer__col footer__col--1">
-                        <label for="user-form" class="label form__label label--light">Телефон</label>
-                        <input type="text" class="input form__input footer__input " id="user-form" placeholder="Ваш номер телефона:">
-                    </div> -->
                     <div class="footer__col footer__col--2">
                         <label for="user-qustion" class="label form__label label--light">Вопрос</label>
                         <input type="text" name="userQustion" class="input form__input footer__input" id="user-qustion" placeholder="Я хочу спросить:">
@@ -984,32 +974,32 @@
             
             
         </div>
-        <div class="map footer__map">
+        <div class="map footer__map" id="contacs">
             <div class="container maper">
                 <div class="map__footer">
                     <h3 class="footer__title map__title">Ростов на дону, Торговый центр Plaza<br>
                         Прямой телефон +7 (999) 768 32 99</h3>
                     <div class="map__contacts">
-                        <a href="#" class="map__contacts__site"><img src="img/mail.svg" alt="mail" class="map__mail"></a>
-                        <a href="#" class="map__contacts__site"><img src="img/insta.svg" alt="insta" class="map__insta"></a>
+                        <a href="#" class="map__contacts__site"><img data-src="img/mail.svg" alt="mail" class="map__mail"></a>
+                        <a href="#" class="map__contacts__site"><img data-src="img/insta.svg" alt="insta" class="map__insta"></a>
                     </div>
                 </div>
-                <div class="footer__map__yandex">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A94b6a03efa4024fd02ee8654333d0c5c103c06046a362ca90f909b31d6795a1d&amp;width=100%25&amp;height=562&amp;lang=ru_RU&amp;scroll=false"></script>
+                <div class="footer__map__yandex" id="YaMaps">
+                    
                 </div>
             </div>
         </div>
         <div class="header-bottom">
             <div class="container ">
                 <div class="menu menu-bottom">
-                    <div class="logo menu__logo wow fadeInLeft	" data-wow-delay='0.2s'>Repair Design Project</div>
+                    <div class="logo menu__logo">Repair Design Project</div>
                     <nav class="nav menu__nav">
-                        <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='0.4s'>Главная</a>
-                        <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='0.6s'>Проекты</a>
-                        <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='0.8s'>Замер  </a>
-                        <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='1s'>Команда</a>
-                        <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='1.2s'>Отзывы</a>
-                        <a href="#" class="nav__item  wow fadeInRight" data-wow-delay='1.4s'>Контакты</a> 
+                        <a href="#" class="nav__item" >Главная</a>
+                        <a href="#" class="nav__item" >Проекты</a>
+                        <a href="#" class="nav__item" >Замер  </a>
+                        <a href="#" class="nav__item" >Команда</a>
+                        <a href="#" class="nav__item" >Отзывы</a>
+                        <a href="#" class="nav__item" >Контакты</a> 
 
 
                     </nav>
@@ -1030,11 +1020,11 @@
             <button class="modal__close"></button>
             <h3 class="modal__title">Оставьте заявку и наш менеджер <br>свяжется с вами </h3>
             <form action="send.php" method="POST" class="form modal__form">
-                <label for="user-name" class="label form__label label--light modal__label">Имя</label>
+                <label for="modal-user-name" class="label form__label label--light modal__label">Имя</label>
                 <input type="text" name="userName" class="input form__input modal__input " id="modal-user-name" placeholder="Как вас зовут:">
-                <label for="user-form" class="label form__label label--light modal__label">Телефон</label>
+                <label for="modal-user-Phone" class="label form__label label--light modal__label">Телефон</label>
                 <input type="tel" name="userPhone" class="input form__input modal__input " id="modal-user-Phone" placeholder="Ваш номер телефона:">
-                <label for="user-email" class="label form__label label--light modal__label">Email</label>
+                <label for="modal-user-email" class="label form__label label--light modal__label">Email</label>
                 <input type="email" name="userEmail" class="input form__input modal__input" id="modal-user-email" placeholder="Ваш email">
                 <div class="policy modal__policy">
                     <input type="checkbox" name="policycheckbox" id="policy-checkbox-modal" class="checkbox policy__checkbox" checked>
@@ -1050,6 +1040,7 @@
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
+<script src="js/jquery.lazyloadxt.js"></script>
 <script src="js/main.js"></script>
 
 </body>
