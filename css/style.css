@@ -1711,6 +1711,11 @@ label.invalid {
   padding-bottom: 0;
 }
 
+.footer__phone {
+  color: #E3B873;
+  text-decoration: none;
+}
+
 .footer-map {
   background-color: #131313;
   width: 100%;
@@ -1718,6 +1723,8 @@ label.invalid {
 }
 
 .footer__map__yandex {
+  height: 100%;
+  width: 100%;
   margin-top: 75px;
   margin-bottom: 100px;
 }
