@@ -394,6 +394,18 @@ $(document).ready(function () {
     script.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A94b6a03efa4024fd02ee8654333d0c5c103c06046a362ca90f909b31d6795a1d&amp;width=100%25&amp;height=562&amp;lang=ru_RU&amp;scroll=false";
     document.getElementById("YaMaps").appendChild(script);
     }
+    jQuery(function($){
+      $('a[href*="#"]').on('click.smoothscroll', function( e ){
+      var hash    = this.hash, _hash   = hash.replace(/#/,''), theHref = $(this).attr('href').replace(/#.*/, '');
+      if( theHref && location.href.replace(/#.*/,'') != theHref ) return;
+      var $target = _hash === '' ? $('body') : $( hash + ', a[name="'+ _hash +'"]').first();
+      if( ! $target.length ) return;
+      e.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $target.offset().top - 0 }, 900, 'swing', function(){
+      window.location.hash = hash;
+      });
+      });
+      });
     
 });
 

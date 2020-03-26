@@ -1903,6 +1903,7 @@ label.invalid {
 @media screen and (max-width: 975px) {
   .mob__fantasy {
     display: block;
+    padding-top: 0;
     margin-bottom: -41%;
   }
   .mob__fantasy__title {
@@ -1948,6 +1949,9 @@ label.invalid {
   .request {
     display: none;
   }
+  .disignt {
+    padding-top: 39%;
+  }
   .client {
     display: none;
   }
@@ -1967,6 +1971,7 @@ label.invalid {
     margin: 0;
   }
   .control__form {
+    padding-top: 5%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2010,7 +2015,7 @@ label.invalid {
     color: #ffffff;
   }
   .types {
-    padding-top: 39%;
+    padding-bottom: 0;
   }
   .types__card {
     margin-bottom: 4.29rem;
@@ -2127,7 +2132,7 @@ label.invalid {
   }
   .section-title__text {
     text-align: left;
-    max-width: 100%;
+    max-width: 53%;
   }
   .section-title__word {
     display: inline;
@@ -2365,6 +2370,38 @@ label.invalid {
   }
   .section__text {
     color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .control {
+    margin-top: -92rem;
+  }
+  .control__video {
+    width: 100%;
+  }
+  .types {
+    padding: 0;
+  }
+  .card__sub {
+    margin: -15px;
+  }
+  .card__img {
+    margin: 0;
+  }
+  .project {
+    padding-top: 0;
+    padding-bottom: 88rem;
+  }
+  .disignt {
+    padding-top: 13%;
+  }
+  .team {
+    padding-top: 144%;
+    padding-bottom: 1%;
+  }
+  .mob__fantasy__title {
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
