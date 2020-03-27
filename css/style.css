@@ -2447,7 +2447,7 @@ input::-moz-placeholder {
 
 @media screen and (max-width: 384px) {
   .label--video {
-    margin-top: 60px;
+    margin-top: 49px;
   }
   .footer__title {
     width: 100%;
