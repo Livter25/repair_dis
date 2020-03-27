@@ -1832,7 +1832,7 @@ input::-moz-placeholder {
 }
 
 .footer__title {
-  width: 42%;
+  width: 45%;
   margin: auto;
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
@@ -1927,9 +1927,6 @@ input::-moz-placeholder {
 }
 
 @media screen and (max-width: 992px) {
-  .footer__title {
-    width: 46%;
-  }
   .skroll-up {
     left: -13%;
   }
@@ -1951,9 +1948,6 @@ input::-moz-placeholder {
 }
 
 @media screen and (max-width: 975px) {
-  .footer__title {
-    width: 47%;
-  }
   main {
     margin-bottom: -1%;
   }
@@ -2096,6 +2090,9 @@ input::-moz-placeholder {
   .footer {
     background: #131313;
   }
+  .footer__phone {
+    display: block;
+  }
   .footer-wrap {
     background-color: transparent;
   }
@@ -2215,7 +2212,7 @@ input::-moz-placeholder {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   input::-webkit-input-placeholder {
     color: #ffffff;
   }
@@ -2235,7 +2232,7 @@ input::-moz-placeholder {
     background: #131313;
   }
   .footer__title {
-    width: 70%;
+    width: 60%;
   }
   .footer__map {
     padding-bottom: 5rem;
@@ -2361,7 +2358,7 @@ input::-moz-placeholder {
 
 @media screen and (max-width: 576px) {
   .footer__title {
-    width: 64%;
+    width: 80%;
   }
   .mob__fantasy {
     display: block;
@@ -2442,9 +2439,18 @@ input::-moz-placeholder {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 419px) {
+  .label--video {
+    margin-top: 45px;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .label--video {
+    margin-top: 60px;
+  }
   .footer__title {
-    width: 98%;
+    width: 100%;
   }
   .control {
     margin-top: -87rem;
