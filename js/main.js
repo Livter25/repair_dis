@@ -1,5 +1,21 @@
 
 $(document).ready(function () {
+  var player;
+
+  function videoPlay(event) {
+    event.target.playVideo();
+    };
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '100%',
+      width: '100%',
+      videoId: 'K734eejofr4',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  }),
+
   YaMapsShown = false;
   $(window).scroll(function() {
     if (!YaMapsShown){
@@ -36,7 +52,7 @@ $(document).ready(function () {
   });
   new WOW().init();
   // маски
-  $('[type=tel]').mask('+7(000)-000-00-00', {placeholder: "+7(000)-000-00-00"});
+  $('[type=tel]').mask('+7(000)-000-00-00', {placeholder: "Ваш номер телефона"});
   
   //валидация формы 
   $('.modal__form').validate({
@@ -62,13 +78,19 @@ $(document).ready(function () {
       });
     },
     errorClass: "invalid",
-    errorElement: "div",
+    errorElement: "em",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
         required: true,
         minlength: 2,
         maxlength: 15,
+        
+      },
+      userPhone: {
+        required: true,
+        minlength: 11,
+        
         
       },
       userPhone: "required",
@@ -85,7 +107,10 @@ $(document).ready(function () {
         minlength: jQuery.validator.format("Имя не короче {0} букв "),
         maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
       } ,
-      userPhone: "Телефон обязательно",
+      userPhone:{
+        required: "Телефон обязательно",
+        minlength: jQuery.validator.format("Номер не короче {0} букв "),
+      },
       userEmail: {
         required: "Обязателно укажите Email",
         email: "Введите в формате sdfsd@asdasd.com"
@@ -139,7 +164,10 @@ $(document).ready(function () {
         minlength: jQuery.validator.format("Имя не короче {0} букв "),
         maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
       } ,
-      userPhone: "Телефон обязательно",
+      userPhone:{
+        required: "Телефон обязательно",
+        minlength: jQuery.validator.format("Номер не короче {0} букв "),
+      },
       userEmail: {
         required: "Обязателно укажите Email",
         email: "Введите в формате sdfsd@asdasd.com"
@@ -190,7 +218,10 @@ $(document).ready(function () {
         minlength: jQuery.validator.format("Имя не короче {0} букв и не больше 15"),
         maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
       } ,
-      userPhone: "Телефон обязательно",
+      userPhone:{
+        required: "Телефон обязательно",
+        minlength: jQuery.validator.format("Номер не короче {0} букв "),
+      },
       policycheckbox: "Согласие обязательно",
       
       }
@@ -240,7 +271,10 @@ $(document).ready(function () {
         minlength: jQuery.validator.format("Имя не короче {0} букв"),
         maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
       } ,
-      userPhone: "Телефон обязательно",
+      userPhone:{
+        required: "Телефон обязательно",
+        minlength: jQuery.validator.format("Номер не короче {0} букв "),
+      },
       policycheckbox: "Согласие обязательно",
       userQustion: {
         required: "Обязателно укажите вопрос",

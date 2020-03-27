@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REPAIR DESIGN PROJECT</title>
-    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -31,7 +31,7 @@
     <header class="header">
         <div class="container">
             <div class="menu">
-                <div class="logo menu__logo wow fadeInLeft	" data-wow-delay='0.2s'>Repair Design Project</div>
+                <a href="#main" class="nav__item" ><div class="logo menu__logo wow fadeInLeft	" data-wow-delay='0.2s'>Repair Design Project</div></a>
                 <nav class="nav menu__nav">
                     <a href="#main" class="nav__item  wow fadeInRight" data-wow-delay='0.4s'>Главная</a>
                     <a href="#project" class="nav__item  wow fadeInRight" data-wow-delay='0.6s'>Проекты</a>
@@ -58,14 +58,14 @@
     <main>
         <section class="hero" id="main" >
             <div class="instagram hero__instagram">
-               <a href="#" class="instagram__link">Instagram</a>
+               <a href="https://www.instagram.com/" class="instagram__link">Instagram</a>
             </div>
 
             <div class="container">
                 <div class="hero__content">
                         <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
                         <p class="hero__text">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
-                        <button class="button hero__button button--primary">Рассчитать стоимость</button>
+                        <button class="button hero__button button--primary" data-toggle="modal">Рассчитать стоимость</button>
                         <button class="button hero__button button--outline" data-toggle="modal">Отправить заявку</button>       
                 </div>
                 <!-- /.hero__content -->
@@ -204,7 +204,8 @@
                     <!-- /.section-title__heading -->
                 </div>
                 <!-- /.section-title -->
-                <div class="control__video video">
+                <div class="control__video video" id="player">
+                    <script src="https://www.youtube.com/iframe_api"></script>
                     <img src="#"  data-src="img/play-icon.svg" alt="play-icon" class="video__play">
                 </div>
                 <div class="control__text">
@@ -218,13 +219,13 @@
                     </div>
                     <div class="control__col">
                         <label for="control-user-phone" class="label form__label label--video">Телефон</label>
-                        <input type="tel" name="userPhone" class="  in control__form--input  " id="control-user-phone" placeholder="Ваш номер телефона:">
+                        <input type="tel" name="userPhone" class="  in control__form--input  " id="control-user-phone" placeholder="Ваш номер телефона:" minlength="12">
                     </div>
                     
                     <button class="button button--primary modal__button control__button">Отправить </button>
                     <div class="policy control__policy">
                         <input type="checkbox" name="policycheckbox" id="policy-checkbox-control" class="checkbox policy__checkbox" checked>
-                        <label for="policy-checkbox-control" class="policy__lable">я соглашаюсь с обработкой данных</label>
+                        <label for="policy-checkbox-control" class="policy__lable">Я соглашаюсь с обработкой данных</label>
                         
                     </div>
                     
@@ -268,7 +269,7 @@
                             </div>
                             <div class=" request__col--11">
                                 <label for="request-user-form" class="label form__label label--light request__label">Телефон</label>
-                                <input type="tel" name="userPhone" class="input form__input request__input " id="request-user-form" placeholder="Ваш номер телефона:">
+                                <input type="tel" name="userPhone" class="input form__input request__input " id="request-user-form" placeholder="Ваш номер телефона:" minlength="12">
                             </div>
                             
                             <div class=" request__col--11">
@@ -280,7 +281,7 @@
                             
                             <div class="policy request__policy">
                                 <input type="checkbox" name="policycheckbox" id="policy-checkbox-request" class="checkbox policy__checkbox" checked>
-                                <label for="policy-checkbox-request" class="policy__lable">я соглашаюсь с обработкой данных</label>
+                                <label for="policy-checkbox-request" class="policy__lable">Я соглашаюсь с обработкой данных</label>
                             </div>
                             <button class="button button--primary request__button">Вызвать замерщика</button>
                         </form> 
@@ -971,7 +972,7 @@
                         </div>
                         <div class="footer__col footer__col--11">
                             <label for="footer-user-form" class="label form__label label--light">Телефон</label>
-                            <input type="tel" name="userPhone" class="input form__input footer__input " id="footer-user-form" placeholder="Ваш номер телефона:">
+                            <input type="tel" name="userPhone" class="input form__input footer__input " id="footer-user-form" placeholder="Ваш номер телефона:" minlength="12">
                         </div>
                     </div>
                     <div class="footer__col footer__col--2">
@@ -983,7 +984,7 @@
                     
                     <div class="policy footer__policy">
                         <input type="checkbox" name="policycheckbox" id="policy-checkbox-footer" class="checkbox policy__checkbox" checked>
-                        <label for="policy-checkbox-footer" class="policy__lable">я соглашаюсь с обработкой данных</label>
+                        <label for="policy-checkbox-footer" class="policy__lable">Я соглашаюсь с обработкой данных</label>
                     </div>
                     <button class="button button--primary footer__button">Отправить заявку</button>
                 </form>
@@ -1040,15 +1041,25 @@
             <button class="modal__close"></button>
             <h3 class="modal__title">Оставьте заявку и наш менеджер <br>свяжется с вами </h3>
             <form action="send.php" method="POST" class="form modal__form">
-                <label for="modal-user-name" class="label form__label label--light modal__label">Имя</label>
-                <input type="text" name="userName" class="input form__input modal__input " id="modal-user-name" placeholder="Как вас зовут:">
-                <label for="modal-user-Phone" class="label form__label label--light modal__label">Телефон</label>
-                <input type="tel" name="userPhone" class="input form__input modal__input " id="modal-user-Phone" placeholder="Ваш номер телефона:">
-                <label for="modal-user-email" class="label form__label label--light modal__label">Email</label>
-                <input type="email" name="userEmail" class="input form__input modal__input" id="modal-user-email" placeholder="Ваш email">
+                <div class="modal__title__input">
+
+                    <label for="modal-user-name" class="label form__label label--light modal__label">Имя</label>
+                    <input type="text" name="userName" class="input form__input modal__input " id="modal-user-name" placeholder="Как вас зовут:">
+                </div>
+                <div class="modal__title__input">
+
+                    <label for="modal-user-Phone" class="label form__label label--light modal__label">Телефон</label>
+                    <input type="tel" name="userPhone" class="input form__input modal__input " id="modal-user-Phone" placeholder="Ваш номер телефона:"
+                    minlength="12">
+                </div>
+                <div class="modal__title__input">
+                    
+                    <label for="modal-user-email" class="label form__label label--light modal__label">Email</label>
+                    <input type="email" name="userEmail" class="input form__input modal__input" id="modal-user-email" placeholder="Ваш email">
+                </div>
                 <div class="policy modal__policy">
                     <input type="checkbox" name="policycheckbox" id="policy-checkbox-modal" class="checkbox policy__checkbox" checked>
-                    <label for="policy-checkbox-modal" class="policy__lable">я соглашаюсь с обработкой данных</label>
+                    <label for="policy-checkbox-modal" class="policy__lable">Я соглашаюсь с обработкой данных</label>
                 </div>
                 <button class="button button--primary modal__button">Отправить заявку</button>
             </form>
