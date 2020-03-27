@@ -1832,6 +1832,8 @@ input::-moz-placeholder {
 }
 
 .footer__title {
+  width: 42%;
+  margin: auto;
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
   font-size: 1.42rem;
@@ -1925,6 +1927,9 @@ input::-moz-placeholder {
 }
 
 @media screen and (max-width: 992px) {
+  .footer__title {
+    width: 46%;
+  }
   .skroll-up {
     left: -13%;
   }
@@ -1946,6 +1951,9 @@ input::-moz-placeholder {
 }
 
 @media screen and (max-width: 975px) {
+  .footer__title {
+    width: 47%;
+  }
   main {
     margin-bottom: -1%;
   }
@@ -2226,6 +2234,9 @@ input::-moz-placeholder {
   .footer {
     background: #131313;
   }
+  .footer__title {
+    width: 70%;
+  }
   .footer__map {
     padding-bottom: 5rem;
   }
@@ -2349,6 +2360,9 @@ input::-moz-placeholder {
 }
 
 @media screen and (max-width: 576px) {
+  .footer__title {
+    width: 64%;
+  }
   .mob__fantasy {
     display: block;
   }
@@ -2429,6 +2443,9 @@ input::-moz-placeholder {
 }
 
 @media screen and (max-width: 380px) {
+  .footer__title {
+    width: 98%;
+  }
   .control {
     margin-top: -87rem;
   }
