@@ -681,6 +681,10 @@ img {
   color: red;
 }
 
+.input {
+  outline: none;
+}
+
 .input.invalid {
   border-bottom: 2px solid red;
 }
@@ -2204,6 +2208,12 @@ input::-moz-placeholder {
 }
 
 @media screen and (max-width: 768px) {
+  input::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  input::-moz-placeholder {
+    color: #ffffff;
+  }
   .mob__fantasy {
     display: block;
   }

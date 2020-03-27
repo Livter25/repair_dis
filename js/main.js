@@ -9,7 +9,7 @@ $(document).ready(function () {
     player = new YT.Player('player', {
       height: '100%',
       width: '100%',
-      videoId: 'K734eejofr4',
+      videoId: 'fXlepnrCDFM',
       events: {
         'onReady': videoPlay,
       }
@@ -109,7 +109,7 @@ $(document).ready(function () {
       } ,
       userPhone:{
         required: "Телефон обязательно",
-        minlength: jQuery.validator.format("Номер не короче {0} букв "),
+        minlength: jQuery.validator.format("Номер не короче {0} цифр "),
       },
       userEmail: {
         required: "Обязателно укажите Email",
@@ -166,7 +166,7 @@ $(document).ready(function () {
       } ,
       userPhone:{
         required: "Телефон обязательно",
-        minlength: jQuery.validator.format("Номер не короче {0} букв "),
+        minlength: jQuery.validator.format("Номер не короче {0} цифр "),
       },
       userEmail: {
         required: "Обязателно укажите Email",
@@ -220,7 +220,7 @@ $(document).ready(function () {
       } ,
       userPhone:{
         required: "Телефон обязательно",
-        minlength: jQuery.validator.format("Номер не короче {0} букв "),
+        minlength: jQuery.validator.format("Номер не короче {0} цифр "),
       },
       policycheckbox: "Согласие обязательно",
       
@@ -273,7 +273,7 @@ $(document).ready(function () {
       } ,
       userPhone:{
         required: "Телефон обязательно",
-        minlength: jQuery.validator.format("Номер не короче {0} букв "),
+        minlength: jQuery.validator.format("Номер не короче {0} цифр "),
       },
       policycheckbox: "Согласие обязательно",
       userQustion: {
