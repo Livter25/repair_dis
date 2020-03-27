@@ -2482,4 +2482,10 @@ input::-moz-placeholder {
     font-size: 1.6rem;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .footer__title {
+    font-size: 1.2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
