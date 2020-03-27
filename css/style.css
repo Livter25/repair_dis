@@ -2027,7 +2027,7 @@ input::-moz-placeholder {
   }
   .control__form--input {
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffffff;
   }
   .control__button {
